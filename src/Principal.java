@@ -1,4 +1,5 @@
 import br.com.alura.screenmatch.model.Filme;
+import br.com.alura.screenmatch.model.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -16,5 +17,19 @@ public class Principal {
 
     System.out.println("Média de pessoas que assistiram: " + meuFilme.pegaMedia());
     System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
+
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.exibeFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(10);
+        lost.setMinutosPorEpisodio(50);
+
+
+        System.out.println( "Episódios por temporada: " + lost.getEpisodiosPorTemporada());
+        System.out.println("Em qual temporada estamos? " + lost.getTemporadas());
+        System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos() + " min.");
+    
     }
 }
