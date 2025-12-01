@@ -5,9 +5,13 @@ Só que o Filme já Extends o Título e no Java eu só posso usar herança uma v
 Só posso herdar de uma única Class.
 Se eu não posso Extender, eu posso usar outro recurso da linguágem que a gente chama de INTERFACE */
 public interface Classificavel {
-    /* Vou definir aqui qual é o método que eu quero que seja comum, a episódio, a Filme, a Série ao que eu quiser que implemente este método
+    /* Vou definir aqui qual é o método que eu quero que seja comum, a episódio, a Filme, a Série
+    ao que eu quiser que implemente este método
     Eu quero que o Classificável me retorne uma classificação
      Não quero a nota, eu quero as ESTRELAS
      É um contrato! Quem usar o Classificável terá um getClassificação*/
     int getClassificacao();
+    /* Qual é o método que ele vai executar aqui?
+    *  é o método que foi executado o 'new' e criou o objeto
+    *         */
 }
